@@ -6,65 +6,93 @@
 
 import React, { Component } from 'react';
 import {
+  StackNavigator,
+} from 'react-navigation';
+/*import {
   Platform,
   StyleSheet,
   Text,
   View,
   ScrollView,
-  ScrollViewStyle
-} from 'react-native';
+  ScrollViewStyle,
+  Button,
+  Navigator
+} from 'react-native';*/
+import ArriveAlive from './ArriveAlive'
+import ProfilePage from './profilePage'
 
-//import layoutTest from './layoutTest'
-//export default layoutTest
+const App=StackNavigator({
+  Home: {screen: ArriveAlive},
+  Profile: {screen: ProfilePage},
+  //ProfilePage: {screen: ProfilePage}
+})
 
-import profilePage from './profilePage'
-export default profilePage
+export default App
+  
+/*import ArriveAlive from './ArriveAlive'
+export default ArriveAlive*/
 
-//import personalInfoPage from './personalInfoPage'
-//export default personalInfoPage
+/*export defaul
+    return (
+      <View>
+        <ArriveAlive />
+      </View>
+    )
+  }
+}
+*/
+
+/*import layoutTest from './layoutTest'
+export default layoutTest*/
 
 
 
-//const instructions = Platform.select({
-  //ios: 'Press Cmd+R to reload,\n' +
-    //'Cmd+D or shake for dev menu',
-  //android: 'Double tap R on your keyboard to reload,\n' +
-    //'Shake or press menu button for dev menu',
-//});
 
-//{export default class App extends Component {
-  //render() {
-    //return (
-      //<View style={styles.container}>
-        //<Text style={styles.welcome}>
-          //Welcome to React Native hahah!
-        //</Text>
-        //<Text style={styles.instructions}>
-          //To get started, edit App.js
-        //</Text>
-        //<Text style={styles.instructions}>
-          //{instructions}
-        //</Text>
-      //</View>
-    //);
-  //}
-//}
+/*import personalInfoPage from './personalInfoPage'
+export default personalInfoPage*/
 
-//const styles = StyleSheet.create({
-  //container: {
-    //flex: 1,
-    //justifyContent: 'center',
-    //alignItems: 'center',
-    //backgroundColor: '#333377',
-  //},
-  //welcome: {
-    //fontSize: 20,
-    //textAlign: 'center',
-    //margin: 10,
-  //},
-  //instructions: {
-    //textAlign: 'center',
-    //color: '#000',
-    //marginBottom: 5,
-  //},
-//});
+
+
+/*const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\n' +
+    'Cmd+D or shake for dev menu',
+  android: 'Double tap R on your keyboard to reload,\n' +
+    'Shake or press menu button for dev menu',
+});
+
+{export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native hahah!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit App.js
+        </Text>
+        <Text style={styles.instructions}>
+          {instructions}
+        </Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#333377',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#000',
+    marginBottom: 5,
+  },
+});*/
