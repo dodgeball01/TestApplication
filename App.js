@@ -18,16 +18,19 @@ import {
   Button,
   Navigator
 } from 'react-native';*/
-import ArriveAlive from './ArriveAlive'
-import ProfilePage from './profilePage'
+//import ArriveAlive from './ArriveAlive'
+//import ProfilePage from './profilePage'
 
-const App=StackNavigator({
+import ReactNetWorking from './ReactNetWorking'
+export default ReactNetWorking
+
+/*const App=StackNavigator({
   Home: {screen: ArriveAlive},
   Profile: {screen: ProfilePage},
   //ProfilePage: {screen: ProfilePage}
-})
+})*/
 
-export default App
+//export default App
   
 /*import ArriveAlive from './ArriveAlive'
 export default ArriveAlive*/
